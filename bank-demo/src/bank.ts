@@ -1,6 +1,4 @@
-/**
- * Bank Account interface
- */
+// The type for all bank accounts in the bank
 interface BankAccount {
     name: string;
     age: number;
@@ -21,6 +19,10 @@ export default class Bank {
      */
     private findAccount(accountNumber: string): BankAccount | undefined {
         return this.accounts.find(account => account.accountNumber === accountNumber);
+    }
+    
+    public depositMoney(amount: number): void {
+
     }
 
     /**
